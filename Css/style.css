@@ -242,17 +242,15 @@ section .main-container .Kir-Whittle .kira-p{
 
 /***************** mobile responsiveness *********************/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px){
 
     section {
-        height: 400vh;
+        height: 330vh;
     }
     
     section .main-container {
         width: 95%;
-        align-items: center;
-        justify-content: center;
-    
+        margin-left: auto;
     }
 
    section .main-container .sub-container .Dan-Jon {
