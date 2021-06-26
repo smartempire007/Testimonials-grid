@@ -253,13 +253,13 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    /* body{
-        height: 280vh;
-    }  */
+    body{
+        height: 270vh;
+    } 
 
     div.wrapper{
         width: 90%;
-        /* margin: 25% 5% 0% 5% ; */
+        margin: 25% 5% 0% 5% ;
         display:block;
     }
 
@@ -303,15 +303,14 @@ body {
 
     .wrapper .patrick-abrams {
         margin-bottom: 1.4rem;
-
+      
     }
 
      /**************** kira whittle section */
 
     /* .wrapper .kira-whittle {
-
-
-    } */
+        margin-bottom: 25%;
+    }  */
 
 }
 
