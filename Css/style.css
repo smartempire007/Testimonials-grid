@@ -6,6 +6,8 @@
     --gray: hsl(0, 0%, 81%);
     --Light-grayish-blue: hsl(210, 46%, 95%);
     --mid-dark-blackish-gray: #8F9095;
+    --main-radius: 8px;
+    --main-padding: 25px;
 }
 
 * {
@@ -15,15 +17,301 @@
 }
 
 body {
+    height: 100vh;
     background-color: var(--Light-grayish-blue);
 }
 
-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);  
+    gap: 1.4rem; 
     font-size: 13px;
+    grid-template-areas: 
+        "daniel-clifford daniel-clifford jonathan-walters kira-whittle"
+        "jeanette-harmon patrick-abrams patrick-abrams kira-whittle";
     font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 35px auto;
+    position: relative;  
+}
+
+.wrapper img {
+    border-radius: 50%;
+}
+
+/*************** daniel clifford section ****************/
+
+.wrapper .daniel-clifford {
+    background-color: var(--Moderate-violet);
+    grid-area: daniel-clifford;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    position: relative;
+
+}
+
+.wrapper .daniel-clifford .quote-svg{
+    position: absolute;  
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.wrapper .daniel-clifford .quote-svg{
+    padding-top: 0px;
+    padding-left: 70%;
+}
+
+.wrapper .daniel-clifford .heading-p{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.wrapper .daniel-clifford .heading-p{
+    padding: 80px 25px 25px 25px;
+}
+
+.wrapper .daniel-clifford .dan-name {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.wrapper .daniel-clifford .dan-name{
+    padding-top: 35px;
+    padding-left: 100px;
+}
+
+.wrapper .daniel-clifford .daniel {
+    color: var(--Light-grayish-blue);
+}
+
+
+.wrapper .daniel-clifford .daniel-veri {
+    color: var(--gray);
+}
+
+
+.wrapper .daniel-clifford .dan-heading {
+    color: var(--White);
+    padding-bottom: 20px; 
+}
+
+
+.wrapper .daniel-clifford .dan-p {
+    color: var(--gray);
+}
+
+/************ jonathan walters section *****************/
+
+.wrapper .jonathan-walters {
+    background-color: var(--Very-dark-grayish-blue);
+    grid-area: jonathan-walters;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    position: relative;
+    
+
+}
+
+.wrapper .jonathan-walters .jon-name {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+.wrapper .jonathan-walters .jonathan {
+    color: var(--White);
+}
+
+.wrapper .jonathan-walters .jonathan-veri {
+    color: var(--gray);
+}
+
+.wrapper .jonathan-walters .jonat-heading {
+    color: var(--White);
+    padding-bottom: 20px;
+}
+
+.wrapper .jonathan-walters .jonat-p {
+    color: var(--gray);
+}
+
+
+/*************** jeanette harmon section ***************/
+
+.wrapper .jeanette-harmon {
+    background-color: var(--White);
+    grid-area: jeanette-harmon;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    position: relative;
+
+}
+
+.wrapper .jeanette-harmon .jean-name {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+
+}
+
+.wrapper .jeanette-harmon .jeanette {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.wrapper .jeanette-harmon .jeanette-veri {
+    color: var(--mid-dark-blackish-gray);
+}
+
+.wrapper .jeanette-harmon .jean-heading {
+    color: var(--Very-dark-blackish-blue);
+    padding-bottom: 20px;
+}
+
+.wrapper .jeanette-harmon .jean-p {
+    color: var(--mid-dark-blackish-gray);
+}
+
+
+/************** patrick abrams section *******************/
+
+.wrapper .patrick-abrams {
+    background-color: var(--Very-dark-blackish-blue);
+    grid-area: patrick-abrams;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    position: relative;
+
+}
+
+.wrapper .patrick-abrams .pat-name {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+.wrapper .patrick-abrams .patrick {
+    color: var(--Light-grayish-blue);
+}
+
+.wrapper .patrick-abrams .patrick-veri {
+    color: var(--gray);
+}
+
+.wrapper .patrick-abrams .pat-heading {
+    color: var(--White);
+    padding-bottom: 20px;
+}
+
+.wrapper .patrick-abrams .pat-p {
+    color: var(--gray);
+}
+
+/**************** kira whittle section */
+
+.wrapper .kira-whittle {
+    background-color: var(--White);
+    grid-area: kira-whittle;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    position: relative;
+
+}
+
+.wrapper .kira-whittle .kira-name {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+.wrapper .kira-whittle .kira {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.wrapper .kira-whittle .kira-veri {
+    color: var(--mid-dark-blackish-gray);
+}
+
+.wrapper .kira-whittle .kira-heading {
+    color: var(--Very-dark-blackish-blue);
+    padding-bottom: 30px;
+}
+
+.wrapper .kira-whittle .kira-p {
+    color: var(--mid-dark-blackish-gray);
+    padding-bottom: 0px;
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        height: 300vh;
+    } 
+
+    div.wrapper{
+        width: 90%;
+        margin: 50% 5% 0px 5% ;
+        display:block;
+    }
+
+     .wrapper .daniel-clifford {
+        margin-bottom: 1.4rem;
+    }
+
+    .wrapper .daniel-clifford .quote-svg {
+        padding-top: 0px;
+        padding-left: 60%;
+    }
+
+    .wrapper .daniel-clifford .heading-p {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+           
+    }
+
+    .wrapper .daniel-clifford .heading-p{
+        padding: 0px;
+    }
+
+     /************ jonathan walters section *****************/
+
+    .wrapper .jonathan-walters {
+        margin-bottom: 1.4rem;
+        
+    }
+
+     /*************** jeanette harmon section ***************/
+
+    .wrapper .jeanette-harmon {
+        margin-bottom: 1.4rem;
+    }
+
+
+     /************** patrick abrams section *******************/
+
+    .wrapper .patrick-abrams {
+        margin-bottom: 1.4rem;
+
+    }
+
+     /**************** kira whittle section */
+
+    /* .wrapper .kira-whittle {
+
+
+    } */
+
 }
 
